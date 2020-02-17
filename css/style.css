@@ -1,16 +1,15 @@
 .card{
   margin: 0;
 }
-
-h6{
-  text-align: center;
+#descrip{
+  display: block;
+  margin:auto;
 }
-span{
-  font-size: 20px;
+#product{
+  border-radius: 45px;
 }
-.description{
-  padding-top: 50px;
-}
-nav{
-positivo: fixed;
+.logo{
+  width: 40px;
+  margin-top: 10px;
+  float: left;
 }

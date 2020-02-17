@@ -17,51 +17,58 @@
 
 <body>
 
-    <nav>
-        <div class="nav-wrapper red lighten-2">
-                <a href="#" class="brand-logo"><span>Tu Zapatito</span><i class="material-icons">shop</i></a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Categorías</a></li>
-                    <li><a href="#">Contactos</a></li>
-                </ul>
-                <ul class="side-nav teal lighten-2" id="mobile-demo">
-                  <li><a href="#">Productos<i class="material-icons">shop</i></a></li>
-                  <li><a href="#">Categorías<i class="material-icons">dashboard</i></a></li>
-                  <li><a href="#">Contactos<i class="material-icons">contacts</i></a></li>
-                </ul>
-        </div>
-    </nav>
+<!--Barra de Navegación-->
+    <div class="navbar-fixed">
+      <nav>
+          <div class="nav-wrapper red lighten-2">
+                  <a href="#" class="brand-logo"><img class="logo" src="img/kid.svg"><span>Tu Zapatito</span></a>
+                  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                      <li><a href="#">Productos</a></li>
+                      <li><a href="#">Categorías</a></li>
+                      <li><a href="#">Contactos</a></li>
+                  </ul>
+                  <ul class="side-nav teal lighten-2" id="mobile-demo">
+                    <li><a href="#">Productos<i class="material-icons">shop</i></a></li>
+                    <li><a href="#">Categorías<i class="material-icons">dashboard</i></a></li>
+                    <li><a href="#">Contactos<i class="material-icons">contacts</i></a></li>
+                  </ul>
+          </div>
+      </nav>
+
+    </div>
     <div class="card">
       <div class="card-image">
         <img src="img/portada.jpg" alt="Tu Zapatito">
       </div>
     </div>
     <div class="card">
-        <div class="card-content grey lighten-4 row">
+        <div class="card-content light-green lighten-2 row">
               <div id="test4">
                   <div class="card waves-light">
-                      <div class="card-image waves-effect waves-block col s12 m12 hoverable ">
-                        <img id="product" src="img/productos/prod-001.jpeg">
+                      <div class="card-image waves-effect waves-block col s12 m7">
+                        <img class="responsive-img" id="product" src="img/productos/prod-001.jpeg">
                       </div>
                   </div>
               </div>
               <div id="test5">
                   <div class="card waves-light">
-                      <div class="card-image waves-effect waves-block col s12 m12 hoverable ">
+                      <div class="card-image waves-effect waves-block col s12 m7">
                         <img id="product" src="img/productos/prod-100.jpeg">
                       </div>
                   </div>
               </div>
               <div id="test6">
                   <div class="card waves-light">
-                      <div class="card-image waves-effect waves-block col s12 m12 hoverable ">
+                      <div class="card-image waves-effect waves-block col s12 m7">
                         <img id="product" src="img/productos/prod-300.jpeg">
                       </div>
                     </div>
               </div>
-     
+              <div class="card-content col s12 m5">
+                  <p>Zapatos 100% cuero, plantillas ortopédicas incorporadas y planta antideslizante.</p>
+                  <a class="btn-floating btn-large waves-effect waves-light blue lighten-1" id="descrip">Ver</a>
+              </div>
         </div>
         <div class="card-tabs">
             <ul class="tabs tabs-fixed-width">
@@ -71,6 +78,53 @@
             </ul>
         </div>
       </div>
+
+<!--Seccion de productos-->
+      <div class="row">
+            <div class="col s12 m6">
+            <!--Caballero-->
+                  <div class="card-panel teal valign-wrappe">
+                    <h5 class="white-text">CABALLERO</h5>
+                    <img class="responsive-img"src="img/productos/prod-200.jpeg" alt="">
+                  </div>
+            </div>
+            <div class="col s12 m6">
+            <!--Dama-->
+                  <div class="card-panel purple accent-1 valign-wrappe">
+                    <h5 class="white-text">DAMA</h5>
+                    <img class="responsive-img"src="img/productos/prod-400.jpeg" alt="">
+                  </div>
+            </div>
+            <div class="col s12 m6">
+            <!--Infantil-->
+                  <div class="card-panel light-blue valign-wrappe">
+                    <h5 class="white-text">INFANTIL</h5>
+                    <img class="responsive-img"src="img/productos/prod-114.jpeg" alt="">
+                  </div>
+            </div>
+            <div class="col s12 m6">
+            <!--Unisex-->
+                  <div class="card-panel amber darken-1 valign-wrappe">
+                    <h5 class="white-text">UNISEX</h5>
+                    <img class="responsive-img"src="img/productos/prod-018.jpeg" alt="">
+                  </div>
+            </div>
+      </div>
+
+
+<!--BOTÓN FLOTANTE-->
+      <div class="fixed-action-btn click-to-toggle">
+          <a class="btn-floating btn-large green">
+              <i class="large material-icons ">apps</i>
+          </a>
+          <ul>
+              <li><a class="btn-floating red"><i class="material-icons">contact_phone</i></a></li>
+              <li><a class="btn-floating yellow darken-1"><i class="material-icons">dashboard</i></a></li>
+              <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+          </ul>
+      </div>
+
+<!--Pie de página-->
       <footer class="page-footer">
          <div class="container">
            <div class="row">
@@ -99,7 +153,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script>$(".button-collapse").sideNav();</script>
+    <script>
+          $(".button-collapse").sideNav();
+    </script>
 </body>
 
 </html>
