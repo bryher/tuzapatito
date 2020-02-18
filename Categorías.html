@@ -51,15 +51,13 @@
     </div>
 
 <!--Carrusel de Productos-->
-  <div class="card-image row">
-    <div class="carousel carousel-slider col m6 offset-m3">
-      <a class="carousel-item" href="#one!"><img src="img/productos/prod-008.jpeg"></a>
-      <a class="carousel-item" href="#two!"><img src="img/productos/prod-102.jpeg"></a>
-      <a class="carousel-item" href="#three!"><img src="img/productos/prod-208.jpeg"></a>
-      <a class="carousel-item" href="#four!"><img src="img/productos/prod-305.jpeg"></a>
-      <a class="carousel-item" href="#five!"><img src="img/productos/prod-403.jpeg"></a>
+    <div class="carousel">
+          <a class="carousel-item" href="#one!"><img src="img/productos/prod-008.jpeg"></a>
+          <a class="carousel-item" href="#two!"><img src="img/productos/prod-102.jpeg"></a>
+          <a class="carousel-item" href="#three!"><img src="img/productos/prod-208.jpeg"></a>
+          <a class="carousel-item" href="#four!"><img src="img/productos/prod-305.jpeg"></a>
+          <a class="carousel-item" href="#five!"><img src="img/productos/prod-403.jpeg"></a>
     </div>
-  </div>
 
 <!--TARJETAS DE PRODUCTOS-->
     <div class="card">
@@ -176,9 +174,9 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script>
           $(".button-collapse").sideNav();
-          $('.carousel.carousel-slider').carousel({
-            fullWidth: true
-          });
+          $(document).ready(function(){
+            $('.carousel').carousel();
+          })
     </script>
 </body>
 
